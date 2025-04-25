@@ -24,17 +24,17 @@ Unified endpoint to create an agent in either **Vapi** or **Retell** depending o
 
 #### 🔸 Common Parameters (Both platforms)
 
-{
-  "Api_provider": "vapi",     // or "retell"
-  "name": "test_agent", // can be named anything 
-  "voice": "sarah-11labs", // or anything which is specified in the docs
+{<br>
+  "Api_provider": "vapi",  (or "retell")<br>
+  "name": "test_agent",  (can be named anything )<br>
+  "voice": "sarah-11labs", (or anything which is specified in the docs)<br>
 }
 
 Required parameter Only for Retell
 
-"response_engine": {
-  "type": "retell-llm",
-  "llm_id": "<your llm_id >" // can be generated using dashboard or seperate endpoint 
+"response_engine": {<br>
+  "type": "retell-llm",<br>
+  "llm_id": "<your llm_id >" (can be generated using dashboard or seperate endpoint)<br>
 }
 
  #### Create Agent on Vapi
@@ -49,16 +49,16 @@ Required parameter Only for Retell
 #### Setup Instructions
 1. Clone & Install
 
-git clone https://github.com/gaurav2311102/Wrapper-Api-for-Vapi-and-Retell-Ai-create-agent-request.git
-cd Api
-python -m venv venv // (your virtual env created)
-source venv/bin/activate
+git clone https://github.com/gaurav2311102/Wrapper-Api-for-Vapi-and-Retell-Ai-create-agent-request.git<br>
+cd Api<br>
+python -m venv venv // (your virtual env created)<br>
+source venv/bin/activate<br>
 pip install -r requirements.txt
 
 2. Configure Environment
 Create a .env file in the root directory:
 
-VAPI_API_KEY=your-vapi-api-key
+VAPI_API_KEY=your-vapi-api-key<br>
 RETELL_API_KEY=your-retell-api-key
 
 3. Run the App
